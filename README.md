@@ -11,13 +11,13 @@ The objective of this project is to develop a comprehensive credit card weekly d
 
 ### Technologies Used
 
-Power BI
+- Power BI
 
-SQL Database
+- SQL Database
 
-DAX (Data Analysis Expressions)
+- DAX (Data Analysis Expressions)
 
-CSV Data Files
+- CSV Data Files
 
 ### Project Workflow
 #### 1. Data Collection
