@@ -1,128 +1,98 @@
-📊 Credit Card Financial Dashboard – Power BI
-📌 Project Overview
+## Credit Card Financial Dashboard – Power BI
+### Project Overview
 
-This project presents a Credit Card Weekly Financial Dashboard built using Power BI, SQL, and DAX. The dashboard provides insights into credit card transactions, customer behavior, and financial performance metrics.
+This project presents a Credit Card Weekly Financial Dashboard developed using Power BI, SQL, and DAX. The dashboard provides insights into credit card transactions, customer behavior, and financial performance metrics to help stakeholders monitor trends and make data-driven decisions.
 
-The goal of this project is to analyze credit card operations and visualize key business metrics through an interactive dashboard to help stakeholders make data-driven decisions.
+The goal of this project is to analyze credit card operations and visualize key business metrics through an interactive dashboard.
 
-🎯 Project Objective
+### Project Objective
 
 The objective of this project is to develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
 
-🛠️ Technologies Used
+### Technologies Used
 
-Power BI – Data visualization & dashboard creation
+Power BI
 
-SQL – Data storage and querying
+SQL Database
 
-DAX (Data Analysis Expressions) – Calculations and measures
+DAX (Data Analysis Expressions)
 
-CSV Dataset – Source data
+CSV Data Files
 
-⚙️ Project Workflow
-1️⃣ Data Collection
+### Project Workflow
+#### 1. Data Collection
 
-Dataset downloaded from GitHub
+The dataset was downloaded from GitHub.
 
-Data stored in CSV format
+Data was stored in CSV format and imported into a SQL database for analysis.
 
-Imported into SQL database
+#### 2. Data Preparation
 
-2️⃣ Data Preparation
+Created SQL tables.
 
-Created SQL tables
+Imported CSV data into SQL tables.
 
-Imported CSV data into SQL
+Cleaned and structured the dataset for analysis.
 
-Cleaned and structured the dataset
+#### 3. Data Modeling
 
-3️⃣ Data Modeling
+Data was connected to Power BI and relationships were created between datasets.
 
-Connected SQL database to Power BI
+#### 4. DAX Calculations
 
-Created table relationships
+calculations include:
 
-Built data model
+- columns and measures were created using DAX.
 
-4️⃣ Data Analysis Using DAX
+- Income group segmentation
 
-Several calculated columns and measures were created.
+- Weekly revenue analysis
 
-Example DAX Calculation
-AgeGroup =
-SWITCH(
- TRUE(),
- 'public cust_detail'[customer_age] < 30, "20-30",
- 'public cust_detail'[customer_age] >= 30 && 'public cust_detail'[customer_age] < 40, "30-40",
- 'public cust_detail'[customer_age] >= 40 && 'public cust_detail'[customer_age] < 50, "40-50",
- 'public cust_detail'[customer_age] >= 50 && 'public cust_detail'[customer_age] < 60, "50-60",
- 'public cust_detail'[customer_age] >= 60, "60+",
- "unknown"
-)
+- Current vs previous week revenue comparison
 
-Other important calculations include:
+- These measures help analyze customer demographics and financial performance.
 
-Income group segmentation
+### Dashboard Features
 
-Weekly revenue analysis
+The Power BI dashboard includes:
 
-Current vs previous week revenue comparison
+- Revenue Analysis
 
-These calculations help analyze customer demographics and financial performance.
+- Weekly Transaction Trends
 
-📊 Dashboard Features
+- Customer Segmentation
 
-The dashboard provides insights into:
+- Credit Card Type Performance
 
-Revenue Analysis
+- State-wise Revenue Distribution
 
-Weekly Transaction Trends
+- Transaction Amount & Count Analysis
 
-Customer Segmentation
+- Activation and Delinquency Rate Monitoring
 
-Credit Card Type Performance
+### Key Insights
+#### Weekly Performance
 
-State-wise Revenue Distribution
+- Revenue increased by 28.8% week-over-week.
 
-Transaction Amount & Count Analysis
+- Transaction amount and count increased.
 
-Activation Rate Monitoring
+- Customer count increased compared to the previous week.
 
-Delinquency Rate Tracking
+- Year-to-Date Overview
 
-📈 Key Business Insights
-Weekly Performance
+- Total Revenue: 57M
 
-Revenue increased by 28.8% week-over-week
+- Total Interest Earned: 8M
 
-Transaction amount and count increased
+- Total Transaction Amount: 46M
 
-Customer count increased
+- Male customers contributed 31M revenue, female customers 26M.
 
-Year-To-Date Overview
+- Blue and Silver credit cards contribute 93% of total transactions.
 
-Total Revenue: 57M
+- Texas, New York, and California contribute 68% of revenue.
 
-Total Interest Earned: 8M
+- Activation Rate: 57.5%
 
-Total Transaction Amount: 46M
-
-Customer insights:
-
-Male customers contributed 31M revenue
-
-Female customers contributed 26M revenue
-
-Credit card insights:
-
-Blue & Silver credit cards contribute 93% of transactions
-
-Regional insights:
-
-Texas, New York, and California contribute 68% of revenue
-
-Performance metrics:
-
-Activation Rate: 57.5%
-
-Delinquent Rate: 6.06%
+- Delinquent Rate: 6.06%.
